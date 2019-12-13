@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href= "css/main.css" rel="stylesheet">
+    <meta http-equiv="content-security-policy" content="default-src 'self';
+    style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css; 
+    script-src 'unsafe-inline' 'self';
+    connect-src 'self' https://api.themoviedb.org/3/search/person https://api.themoviedb.org/3/tv/ https://api.themoviedb.org/3/movie/ ;
+    media-src 'none'; 
+    font-src *;
+    img-src 'self' https://image.tmdb.org/t/p/ ">
+    <title>Movie app</title>
+</head>
+<body>
+
+   <div id="first" class="page active">
+        <form>
+                <label for="person" class="search">Search Your Actor Here:</label><br>
+                <input type="text" name="search" id="person"><br>
+                <button type="button" name="button" data-target="first">Search</button>
+            </form>
+
+   </div>
+    <div id="second" class="page" data-target="second">
+        <ol id="order"></ol>
+       
+    </div>
+    <div id="third" class="page" data-target="third">
+    </div>
+        <div id="fourth" class="page" data-target="fourth">
+
+        </div>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
